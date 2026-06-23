@@ -1,0 +1,104 @@
+/* ================= GLOBAL ================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* ================= BUTTONS ================= */
+
+.primary-btn{
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.primary-btn:hover{
+    background-color: #0056b3;
+}
+
+.secondary-btn{
+    display: inline-block;
+    padding: 14px 28px;
+    border: 2px solid #007bff;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover{
+    background-color: #007bff;
+    color: white;
+}
+
+/* ================= CTA SECTION ================= */
+
+.cta-section{
+    padding: 70px 0;
+    background-color: #007bff;
+    color: white;
+}
+
+.cta-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cta-text{
+    flex: 1;
+}
+
+.cta-text h2{
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.cta-text p{
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.cta-button .primary-btn{
+    background-color: white;
+    color: #007bff;
+}
+
+.cta-button .primary-btn:hover{
+    background-color: #f1f1f1;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 768px){
+
+    .cta-container{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .cta-text h2{
+        font-size: 30px;
+    }
+
+}

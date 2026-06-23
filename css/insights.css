@@ -1,0 +1,392 @@
+/* ================= INSIGHTS HEADER - JUST BELOW HEADER ================= */
+
+.insights-header {
+    width: 100%;
+    padding: 25px 0 0; /* moved up (was 60px) */
+    background: linear-gradient(to bottom, #f5f9ff, #ffffff);
+}
+
+.insights-header .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insights-title {
+    font-size: 52px;
+    color: #222;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* ================= DESCRIPTION PARAGRAPH ================= */
+
+.insights-description-section {
+    width: 100%;
+    padding: 10px 0 20px; /* reduced spacing */
+    background: linear-gradient(to bottom, #f5f9ff, #ffffff);
+}
+
+.insights-description-section .container {
+    text-align: center;
+}
+
+.insights-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.9;
+    text-align: center;
+}
+
+/* ================= SEARCH BAR (Extreme Right) ================= */
+
+.search-bar-container {
+    padding: 20px 0 30px;
+    background-color: #ffffff;
+}
+
+.search-wrapper-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    max-width: 450px;
+    margin-left: auto;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 18px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+}
+
+.search-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #222;
+    width: 100%;
+}
+
+/* ================= FILTER ROW ================= */
+
+.filter-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 15px 0;
+}
+
+.dropdown-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.category-dropdown {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    min-width: 180px;
+}
+
+.category-dropdown:focus {
+    border-color: #007bff;
+}
+
+/* ================= CASE STUDIES SECTION ================= */
+
+.case-section {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+.case-section .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cases-grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.case-card {
+    width: 350px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    border-left: 4px solid #007bff;
+}
+
+.case-card:hover {
+    transform: translateY(-8px);
+}
+
+.case-card.hide {
+    display: none;
+}
+
+.case-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.case-tag {
+    display: inline-block;
+    background-color: #e8f0fe;
+    color: #007bff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.case-card h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.case-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.read-more, .read-now {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.read-more:hover, .read-now:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* ================= ARTICLES SECTION ================= */
+
+.articles-section {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.articles-section .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articles-grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.article-card {
+    width: 350px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    border-bottom: 3px solid #007bff;
+}
+
+.article-card:hover {
+    transform: translateY(-8px);
+}
+
+.article-card.hide {
+    display: none;
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.article-date {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.article-card h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.article-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+/* ================= PAGINATION (CENTER FIXED - SIDE BY SIDE) ================= */
+
+.pagination-section {
+    width: 100%;
+    padding: 40px 0 60px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-section .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.page-btn {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.page-btn:hover:not(:disabled) {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Page numbers side by side horizontally */
+.page-numbers {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.page-num {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.page-num:hover {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.page-num.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .insights-title {
+        font-size: 40px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .case-card,
+    .article-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .insights-title {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}

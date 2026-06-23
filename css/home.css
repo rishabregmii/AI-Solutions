@@ -1,0 +1,361 @@
+/* ================= HERO SECTION ================= */
+
+.hero-section{
+    width: 100%;
+    padding: 70px 0 40px;
+    background: linear-gradient(to bottom, #f5f9ff, #ffffff);
+}
+
+.hero-container{
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+/* Left Content */
+
+.hero-text{
+    width: 70%;
+}
+
+.hero-text h1{
+    font-size: 52px;
+    color: #222;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    max-width: 700px;
+}
+
+.hero-text p{
+    width: 90%;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+/* Buttons */
+
+.hero-buttons{
+    display: flex;
+    gap: 120px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.hero-buttons .primary-btn,
+.hero-buttons .secondary-btn{
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+/* Right Image */
+
+.hero-image{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img{
+    width: 520px;
+    height: 380px;
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* ================= MISSION SECTION ================= */
+
+.mission-section{
+    padding: 20px 0 50px;
+    background-color: #ffffff;
+}
+
+.mission-section .container{
+    width: 82%;
+    margin-left: 70px;
+
+    background-color: #fff;
+
+    border-radius: 14px;
+
+    padding: 35px 40px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission-section h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #222;
+
+    width: 100%;
+    text-align: center;
+}
+
+.mission-section p{
+    width: 88%;
+    margin: auto;
+
+    font-size: 18px;
+    color: #555;
+
+    line-height: 1.9;
+
+    text-align: center;
+}
+
+/* ================= STATS SECTION ================= */
+
+.stats-section{
+    width: 100%;
+    padding: 40px 0 70px;
+
+    background:#ffffff;
+}
+
+.stats-section .stats-container{
+    width: 82%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+/* Card */
+
+.stats-section .stat-box{
+    background-color: #ffffff;
+
+    padding: 35px 20px;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    border: 1px solid #edf1f7;
+
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+
+    transition: 0.3s ease;
+}
+
+.stats-section .stat-box:hover{
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 24px rgba(109, 74, 255, 0.12);
+}
+
+/* Numbers */
+
+.stats-section .stat-box h2{
+    font-size: 50px;
+    color: #4ab7ff;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Text */
+
+.stats-section .stat-box p{
+    font-size: 17px;
+    color: #555;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+/* ================= FEATURES SECTION ================= */
+
+.features-section{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0 60px;
+    position: relative;
+}
+
+.features-section .container{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-section h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #222;
+
+    width: 100%;
+}
+
+/* Features Layout */
+
+.features-container{
+    width: 78%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 90px;
+}
+
+/* Cards */
+
+.feature-card{
+    width: 350px;
+
+    background-color: #fff;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    text-align: left;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-8px);
+}
+
+.feature-card img{
+    width: 100%;
+    height: 210px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    display: block;
+}
+
+.feature-card h3{
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 24px;
+}
+
+.feature-card p{
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 1200px){
+
+    .features-container{
+        width: 100%;
+        gap: 40px;
+    }
+
+}
+
+@media(max-width: 992px){
+
+    .hero-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text{
+        width: 100%;
+    }
+
+    .hero-text h1{
+        margin: auto auto 25px;
+    }
+
+    .hero-text p{
+        width: 100%;
+    }
+
+    .hero-image{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-buttons{
+        margin-left: 0;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .mission-section .container{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .stats-section .stats-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .hero-text h1{
+        font-size: 40px;
+    }
+
+    .features-section h2,
+    .mission-section h2{
+        font-size: 34px;
+    }
+
+}
+
+@media(max-width: 576px){
+
+    .hero-text h1{
+        font-size: 32px;
+    }
+
+    .stats-section .stats-container{
+        grid-template-columns: 1fr;
+    }
+
+    .stats-section .stat-box h2{
+        font-size: 42px;
+    }
+
+    .feature-card{
+        width: 100%;
+    }
+
+    .hero-image img{
+        width: 100%;
+        height: auto;
+    }
+
+}

@@ -1,0 +1,279 @@
+/* ================= CONTACT HEADER - TOP CENTER ================= */
+
+.contact-header {
+    width: 100%;
+    padding: 25px 0 0;
+    background: linear-gradient(to bottom, #f5f9ff, #ffffff);
+}
+
+.contact-header .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title {
+    font-size: 52px;
+    color: #222;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+    width: 90%;
+    margin: 40px auto;
+    background-color: #ffffff;
+}
+
+.contact-section .container {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* ================= LEFT SIDE - CONTACT INFO & MAP ================= */
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.info-title {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+}
+
+.info-details {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-icon {
+    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    border-radius: 12px;
+}
+
+.info-item p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 280px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= RIGHT SIDE - CONTACT FORM ================= */
+
+.contact-form-wrapper {
+    flex: 1.5;
+    min-width: 400px;
+}
+
+.form-title {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+}
+
+.contact-form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+/* Single Column Layout - Labels on top */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.required {
+    color: #dc3545;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* ================= SUCCESS MESSAGE ================= */
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* ================= FIELD ERROR STYLES ================= */
+
+.field-error {
+    display: block;
+    color: #dc3545;
+    font-size: 13px;
+    margin-top: 5px;
+    padding: 8px 12px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+/* Highlight input with error */
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+/* Optional: Add red border to the form group when it has error */
+.form-group.has-error input,
+.form-group.has-error select,
+.form-group.has-error textarea {
+    border-color: #dc3545;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+    .contact-section .container {
+        flex-direction: column;
+    }
+    
+    .contact-info, .contact-form-wrapper {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 40px;
+    }
+    
+    .info-title, .form-title {
+        font-size: 24px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 32px;
+    }
+    
+    .info-title, .form-title {
+        font-size: 22px;
+    }
+    
+    .info-item {
+        padding: 8px;
+    }
+    
+    .info-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+    
+    .info-item p {
+        font-size: 14px;
+    }
+    
+    .field-error {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
