@@ -1,0 +1,269 @@
+/* admin/css/login.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: linear-gradient(to bottom, #f5f9ff, #ffffff);
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================= LOGIN CONTAINER ================= */
+
+.login-container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* ================= LOGIN CARD ================= */
+
+.login-card {
+    max-width: 450px;
+
+    margin: 0 auto;
+
+    background-color: #ffffff;
+
+    border-radius: 16px;
+
+    border: 1px solid #edf1f7;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+/* ================= LOGIN HEADER (Matches Sidebar Color) ================= */
+
+.login-header {
+    background-color: #e8edf5;
+
+    color: #222;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-bottom: 1px solid #d0d7e5;
+}
+
+.login-header .logo-img {
+    width: 100px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+.login-header h1 {
+    font-size: 28px;
+
+    color: #222;
+
+    margin-bottom: 10px;
+}
+
+.login-header h1 span {
+    color: #00d4ff;
+}
+
+.login-header p {
+    font-size: 14px;
+
+    color: #555;
+
+    line-height: 1.7;
+}
+
+/* ================= ALERTS ================= */
+
+.alert {
+    padding: 12px 20px;
+
+    margin: 20px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+.alert-error {
+    background: #f8d7da;
+
+    color: #721c24;
+
+    border-left: 4px solid #dc3545;
+}
+
+/* ================= LOGIN FORM ================= */
+
+.login-form {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+    color: #222;
+
+    font-size: 14px;
+}
+
+/* ================= INPUTS ================= */
+
+.input-icon input {
+    width: 100%;
+
+    padding: 12px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+
+    font-family: inherit;
+
+    background-color: #ffffff;
+}
+
+.input-icon input:focus {
+    outline: none;
+
+    border-color: #007bff;
+
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* ================= CAPTCHA ================= */
+
+.captcha-group {
+    margin: 20px 0;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+/* ================= BUTTON ================= */
+
+.login-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    background: #007bff;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #0056b3;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(0, 123, 255, 0.2);
+}
+
+/* Add to your existing login.css */
+
+.alert-error ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.alert-error li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+}
+
+.alert-error li:last-child {
+    margin-bottom: 0;
+}
+
+/* ================= FOOTER ================= */
+
+.login-footer {
+    text-align: center;
+
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #edf1f7;
+}
+
+.login-footer a {
+    color: #007bff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 480px) {
+
+    .login-card {
+        border-radius: 12px;
+    }
+
+    .login-header {
+        padding: 30px 20px;
+    }
+
+    .login-header .logo-img {
+        width: 80px;
+    }
+
+    .login-header h1 {
+        font-size: 24px;
+    }
+
+    .login-form {
+        padding: 25px;
+    }
+}
